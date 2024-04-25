@@ -70,16 +70,26 @@ const NewGroup = () => {
     <Dialog onClose={closeHandler} open={isNewGroup}>
       <Stack p={{ xs: "1rem", sm: "3rem" }} width={"25rem"} spacing={"2rem"}>
         <DialogTitle textAlign={"center"} variant="h4">
-          New Group
+          <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+            New Group
+          </p>
         </DialogTitle>
 
         <TextField
-          label="Group Name"
           value={groupName.value}
           onChange={groupName.changeHandler}
+          className="flex items-center justify-center uppercase font-bold text-3xl "
+          placeholder="Group Name"
+
         />
 
-        <Typography variant="body1">Members</Typography>
+        <Typography variant="body1">
+          <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+            Members
+          </p>
+        </Typography>
 
         <Stack>
           {isLoading ? (

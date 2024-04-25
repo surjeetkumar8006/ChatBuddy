@@ -38,7 +38,12 @@ const Notifications = () => {
   return (
     <Dialog open={isNotification} onClose={closeHandler}>
       <Stack p={{ xs: "1rem", sm: "2rem" }} maxWidth={"25rem"}>
-        <DialogTitle>Notifications</DialogTitle>
+        <DialogTitle>
+          <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+            Notifications
+          </p>
+        </DialogTitle>
 
         {isLoading ? (
           <Skeleton />

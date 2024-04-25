@@ -250,7 +250,10 @@ const Groups = () => {
         startIcon={<DeleteIcon />}
         onClick={openConfirmDeleteHandler}
       >
-        Delete Group
+        <p className="font-bold ">
+
+          Delete Group
+        </p>
       </Button>
       <Button
         size="large"
@@ -258,7 +261,10 @@ const Groups = () => {
         startIcon={<AddIcon />}
         onClick={openAddMemberHandler}
       >
-        Add Member
+        <p className="font-bold ">
+
+          Add Member
+        </p>
       </Button>
     </Stack>
   );
@@ -303,7 +309,10 @@ const Groups = () => {
               alignSelf={"flex-start"}
               variant="body1"
             >
-              Members
+              <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+                Members
+              </p>
             </Typography>
 
             <Stack
@@ -329,11 +338,7 @@ const Groups = () => {
                     user={i}
                     key={i._id}
                     isAdded
-                    styling={{
-                      boxShadow: "0 0 0.5rem  rgba(0,0,0,0.2)",
-                      padding: "1rem 2rem",
-                      borderRadius: "1rem",
-                    }}
+
                     handler={removeMemberHandler}
                   />
                 ))
@@ -413,8 +418,16 @@ const GroupListItem = memo(({ group, chatId }) => {
       }}
     >
       <Stack direction={"row"} spacing={"1rem"} alignItems={"center"}>
+        <p className="border-4 rounded-2xl p-2  border-black flex justify-center items-center gap-4 font-bold  w-full  ">
+
         <AvatarCard avatar={avatar} />
-        <Typography>{name}</Typography>
+        <Typography>
+          <p className="font-bold text-xl ">
+
+          {name}
+          </p>
+          </Typography>
+        </p>
       </Stack>
     </Link>
   );

@@ -54,7 +54,12 @@ const Search = () => {
   return (
     <Dialog open={isSearch} onClose={searchCloseHandler}>
       <Stack p={"2rem"} direction={"column"} width={"25rem"}>
-        <DialogTitle textAlign={"center"}>Find People</DialogTitle>
+        <DialogTitle textAlign={"center"}>
+          <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+            Find People
+          </p>
+        </DialogTitle>
         <TextField
           label=""
           value={search.value}
@@ -68,18 +73,23 @@ const Search = () => {
               </InputAdornment>
             ),
           }}
+          className="flex items-center justify-center uppercase font-bold text-3xl "
         />
 
-        <List>
-          {users.map((i) => (
-            <UserItem
-              user={i}
-              key={i._id}
-              handler={addFriendHandler}
-              handlerIsLoading={isLoadingSendFriendRequest}
-            />
-          ))}
-        </List>
+        <div >
+
+          <List>
+            {users.map((i) => (
+              <UserItem
+                user={i}
+                key={i._id}
+                handler={addFriendHandler}
+                handlerIsLoading={isLoadingSendFriendRequest}
+                className="border-4 border-black  "
+              />
+            ))}
+          </List>
+        </div>
       </Stack>
     </Dialog>
   );

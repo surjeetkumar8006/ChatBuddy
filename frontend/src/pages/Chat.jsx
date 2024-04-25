@@ -184,16 +184,21 @@ const Chat = ({ chatId, user }) => {
   ) : (
     <Fragment>
       <Stack
-        ref={containerRef}
-        boxSizing={"border-box"}
-        padding={"1rem"}
-        spacing={"1rem"}
-        bgcolor={grayColor}
-        height={"90%"}
-        sx={{
-          overflowX: "hidden",
-          overflowY: "auto",
-        }}
+      ref={containerRef}
+      boxSizing={"border-box"}
+      padding={"1rem"}
+      spacing={"1rem"}
+      bgcolor={grayColor} // Remove this line if you're not using grayColor
+      height={"90%"}
+      sx={{
+        overflowX: "hidden",
+        overflowY: "auto",
+        backgroundImage: `url('../Images/bg.png')`, // Adjust the path to your image
+        backgroundSize: 'cover', // Optional: Adjust to your preference
+        backgroundRepeat: 'no-repeat', // Optional: Adjust to your preference
+      }}
+      className=" shadow-[inset_-12px_-8px_40px_#46464620]"
+
       >
         {allMessages.map((i) => (
           <MessageComponent key={i._id} message={i} user={user} />
@@ -209,6 +214,9 @@ const Chat = ({ chatId, user }) => {
           height: "10%",
         }}
         onSubmit={submitHandler}
+        className="font-bold shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] border-2 border-black  mr-2 ml-2  rounded-lg "
+
+        
       >
         <Stack
           direction={"row"}
@@ -216,11 +224,12 @@ const Chat = ({ chatId, user }) => {
           padding={"1rem"}
           alignItems={"center"}
           position={"relative"}
+          
         >
           <IconButton
             sx={{
               position: "absolute",
-              left: "1.5rem",
+              left: "0.1rem",
               rotate: "30deg",
             }}
             onClick={handleFileOpen}
@@ -232,13 +241,14 @@ const Chat = ({ chatId, user }) => {
             placeholder="Type Message Here..."
             value={message}
             onChange={messageOnChange}
+            className="flex justify-center items-center font-bold border-4 border-black  bg-black   "
           />
 
           <IconButton
             type="submit"
             sx={{
               rotate: "-30deg",
-              bgcolor: orange,
+              bgcolor: "black",
               color: "white",
               marginLeft: "1rem",
               padding: "0.5rem",

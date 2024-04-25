@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "code": "nodemon app.js -e hbs,js,jsx,.env,html"
   },
   "keywords": [],
   "author": "",

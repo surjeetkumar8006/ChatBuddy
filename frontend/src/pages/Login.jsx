@@ -137,7 +137,12 @@ const Login = () => {
         >
           {isLogin ? (
             <>
-              <Typography variant="h5">Login</Typography>
+              <Typography variant="h5">
+              <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+Login
+</p>
+              </Typography>
               <form
                 style={{
                   width: "100%",
@@ -153,6 +158,8 @@ const Login = () => {
                   variant="outlined"
                   value={username.value}
                   onChange={username.changeHandler}
+          className="flex items-center justify-center uppercase font-bold text-3xl "
+
                 />
 
                 <TextField
@@ -164,6 +171,8 @@ const Login = () => {
                   variant="outlined"
                   value={password.value}
                   onChange={password.changeHandler}
+          className="flex items-center justify-center uppercase font-bold text-3xl "
+
                 />
 
                 <Button
@@ -176,6 +185,7 @@ const Login = () => {
                   fullWidth
                   disabled={isLoading}
                 >
+                  
                   Login
                 </Button>
 
@@ -195,7 +205,11 @@ const Login = () => {
             </>
           ) : (
             <>
-              <Typography variant="h5">Sign Up</Typography>
+              <Typography variant="h5">
+              <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+              Sign Up
+</p>
+                </Typography>
               <form
                 style={{
                   width: "100%",

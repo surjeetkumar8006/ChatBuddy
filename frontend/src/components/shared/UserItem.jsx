@@ -13,6 +13,9 @@ const UserItem = ({
   const { name, _id, avatar } = user;
 
   return (
+    <>
+    <div className="border-2 border-orange-500 mt-1 rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]" >
+
     <ListItem>
       <Stack
         direction={"row"}
@@ -54,6 +57,12 @@ const UserItem = ({
         </IconButton>
       </Stack>
     </ListItem>
+
+    </div>
+
+
+    </>
+
   );
 };
 

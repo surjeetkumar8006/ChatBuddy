@@ -1,5 +1,7 @@
 import { Drawer, Grid, Skeleton } from "@mui/material";
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import Navbar2 from "./Navbar2";
+import Header from "./Header";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import {
@@ -25,7 +27,6 @@ import DeleteChatMenu from "../dialogs/DeleteChatMenu";
 import Title from "../shared/Title";
 import ChatList from "../specific/ChatList";
 import Profile from "../specific/Profile";
-import Header from "./Header";
 
 const AppLayout = () => (WrappedComponent) => {
   return (props) => {
@@ -92,7 +93,16 @@ const AppLayout = () => (WrappedComponent) => {
     return (
       <>
         <Title />
-        <Header />
+        {/* <Header /> */}
+
+        {/* <Header /> */}
+        <Navbar2 />
+
+
+
+
+        {/* <Navbar2/> */}
+
 
         <DeleteChatMenu
           dispatch={dispatch}
@@ -116,13 +126,16 @@ const AppLayout = () => (WrappedComponent) => {
 
         <Grid container height={"calc(100vh - 4rem)"}>
           <Grid
+            className=" border-r-8  border-black  bg-slate-50  "
             item
-            sm={4}
+            xs={12}
+            sm={3}
             md={3}
+            lg={3}
+            height={"100%"}
             sx={{
               display: { xs: "none", sm: "block" },
             }}
-            height={"100%"}
           >
             {isLoading ? (
               <Skeleton />
@@ -136,22 +149,16 @@ const AppLayout = () => (WrappedComponent) => {
               />
             )}
           </Grid>
-          <Grid item xs={12} sm={8} md={5} lg={6} height={"100%"}>
-            <WrappedComponent {...props} chatId={chatId} user={user} />
-          </Grid>
-
           <Grid
+            className=""
             item
-            md={4}
-            lg={3}
+            xs={12}
+            sm={9}
+            md={9}
+            lg={9}
             height={"100%"}
-            sx={{
-              display: { xs: "none", md: "block" },
-              padding: "2rem",
-              bgcolor: "rgba(0,0,0,0.85)",
-            }}
           >
-            <Profile user={user} />
+            <WrappedComponent {...props} chatId={chatId} user={user} />
           </Grid>
         </Grid>
       </>

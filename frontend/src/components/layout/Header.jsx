@@ -31,6 +31,7 @@ import {
   setIsSearch,
 } from "../../redux/reducers/misc";
 import { resetNotificationCount } from "../../redux/reducers/chat";
+import { AppName } from "../../assets/FrontendUtils";
 
 const SearchDialog = lazy(() => import("../specific/Search"));
 const NotifcationDialog = lazy(() => import("../specific/Notifications"));
@@ -88,7 +89,7 @@ const Header = () => {
                 display: { xs: "none", sm: "block" },
               }}
             >
-              Chattu
+              {AppName}
             </Typography>
 
             <Box

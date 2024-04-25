@@ -7,8 +7,12 @@ import {
 } from "@mui/icons-material";
 import moment from "moment";
 import { transformImage } from "../../lib/features";
+import { useDispatch, useSelector } from "react-redux";
 
-const Profile = ({ user }) => {
+
+const Profile = () => {
+  const { user } = useSelector((state) => state.auth);
+
   return (
     <Stack spacing={"2rem"} direction={"column"} alignItems={"center"}>
       <Avatar

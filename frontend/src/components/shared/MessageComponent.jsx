@@ -22,17 +22,21 @@ const MessageComponent = ({ message, user }) => {
         backgroundColor: "white",
         color: "black",
         borderRadius: "5px",
-        padding: "0.5rem",
+        padding: "0.7rem",
         width: "fit-content",
       }}
+      className="border-r-4 border-teal-500 rounded-3xl shadow-[inset_-12px_-8px_40px_#46464620]"
     >
       {!sameSender && (
-        <Typography color={lightBlue} fontWeight={"600"} variant="caption">
+        <Typography color={lightBlue} fontWeight={"00"} variant="caption" className=" ">
           {sender.name}
         </Typography>
       )}
 
-      {content && <Typography>{content}</Typography>}
+      <div className="font-extrabold ">
+
+        {content && <h1  className="font-extrabold">{content}</h1>}
+      </div>
 
       {attachments.length > 0 &&
         attachments.map((attachment, index) => {
@@ -48,6 +52,7 @@ const MessageComponent = ({ message, user }) => {
                 style={{
                   color: "black",
                 }}
+
               >
                 {RenderAttachment(file, url)}
               </a>

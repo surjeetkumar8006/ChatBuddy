@@ -55,7 +55,12 @@ const AdminLogin = () => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h5">Admin Login</Typography>
+          <Typography variant="h5">
+            <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+
+              Admin Login
+            </p>
+          </Typography>
           <form
             style={{
               width: "100%",
@@ -72,8 +77,16 @@ const AdminLogin = () => {
               variant="outlined"
               value={secretKey.value}
               onChange={secretKey.changeHandler}
+              className="flex items-center justify-center uppercase font-bold text-3xl "
+
             />
 
+
+            <p className=" flex justify-center items-center ">
+             <strong>
+             key :- jiejrihgifdif
+              </strong>
+            </p>
             <Button
               sx={{
                 marginTop: "1rem",

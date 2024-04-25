@@ -5,10 +5,20 @@ import { grayColor } from "../constants/color";
 
 const Home = () => {
   return (
+
     <Box bgcolor={grayColor} height={"100%"}>
-      <Typography p={"2rem"} variant="h5" textAlign={"center"}>
-        Select a friend to chat
-      </Typography>
+      <div className="flex flex-col  justify-center items-center h-[80vh]   ">
+
+        <h1 className=" text-5xl font-bold ">
+
+          Select a friend to chat
+
+        </h1>
+        <p>
+          (or refresh the page as it is deployed on free server )
+
+        </p>
+      </div>
     </Box>
   );
 };

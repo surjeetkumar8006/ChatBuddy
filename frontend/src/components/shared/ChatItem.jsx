@@ -19,9 +19,11 @@ const ChatItem = ({
     <Link
       sx={{
         padding: "0",
+        marginTop:"2px "
       }}
       to={`/chat/${_id}`}
       onContextMenu={(e) => handleDeleteChat(e, _id, groupChat)}
+      className=" border-4  border-black rounded-2xl  shadow-[inset_-12px_-8px_40px_#46464620]  hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
     >
       <motion.div
         initial={{ opacity: 0, y: "-100%" }}
@@ -37,10 +39,15 @@ const ChatItem = ({
           padding: "1rem",
         }}
       >
-        <AvatarCard avatar={avatar} />
+        <AvatarCard avatar={avatar} className="border-4 border-black " />
 
         <Stack>
-          <Typography>{name}</Typography>
+          <Typography>
+            <p className="font-bold text-xl  capitalize">
+
+            {name}
+            </p>
+            </Typography>
           {newMessageAlert && (
             <Typography>{newMessageAlert.count} New Message</Typography>
           )}
