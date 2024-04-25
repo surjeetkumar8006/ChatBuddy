@@ -1,1 +1,1 @@
-export const server = import.meta.env.VITE_SERVER;
+export const server = "https://chat-buddy-with-socket-io.onrender.com"
