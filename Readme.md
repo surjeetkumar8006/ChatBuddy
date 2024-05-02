@@ -20,7 +20,7 @@ To run ChatBuddy locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ChatBuddy.git
+   git clone https://github.com/AdityaGoel0320/MERN-CHAT-APP-WITH-SOCKET-IO.git
    ```
 
 2. Install dependencies for both frontend and backend:
@@ -82,20 +82,9 @@ Once the application is up and running, users can sign up, log in, and start mes
 - Socket.io
 - Redux
 
-## Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](link_to_contributing.md).
-
-## License
-
-This project is licensed under the [MIT License](link_to_license).
-
-## Acknowledgments
-
-Special thanks to [name](link_to_github_profile) for their contributions.
 
 ---
 
-© 2024 Your Name. All Rights Reserved.
+© 2024 Aditya Goel. All Rights Reserved.
 
-[website](link_to_your_website) | [GitHub](link_to_your_github) | [LinkedIn](link_to_your_linkedin)
+[website](https://aditya-goel-portfolio-website.vercel.app/) | [GitHub](https://github.com/AdityaGoel0320) | [LinkedIn](https://www.linkedin.com/in/aditya-goel-286245239/)
