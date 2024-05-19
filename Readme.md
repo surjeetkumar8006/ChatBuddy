@@ -3,8 +3,9 @@
 ChatBuddy is a full-stack web application designed to facilitate personal interaction through real-time messaging. It provides users with a seamless experience to connect and communicate with each other. This README file serves as a guide to set up and run the application.
 
 ![ChatBuddy](link_to_screenshot)
+https://ibb.co/w7KqdnD
 
-[Watch the demo video](link_to_demo_video)
+<!-- [Watch the demo video](link_to_demo_video) -->
 
 ## Features
 
