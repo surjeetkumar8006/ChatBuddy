@@ -5,6 +5,8 @@ ChatBuddy is a full-stack web application designed to facilitate personal intera
 ![ChatBuddy](link_to_screenshot)
 https://ibb.co/w7KqdnD
 
+
+
 <!-- [Watch the demo video](link_to_demo_video) -->
 
 ## Features
