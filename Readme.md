@@ -2,7 +2,7 @@
 
 ChatBuddy is a full-stack web application designed to facilitate personal interaction through real-time messaging. It provides users with a seamless experience to connect and communicate with each other. This README file serves as a guide to set up and run the application.
 
-![ChatBuddy](link_to_screenshot)
+Live Deployed Link :- https://chat-buddy-with-socket-io.vercel.app/
 
 ## ChatBuddy UI
 ![ChatBuddy UI](https://github.com/AdityaGoel0320/MERN-CHAT-APP-WITH-SOCKET-IO/assets/112582770/88ae9a28-3ea9-44a7-a868-9c9179e6e690)
@@ -82,6 +82,8 @@ To run ChatBuddy locally, follow these steps:
 ## Usage
 
 Once the application is up and running, users can sign up, log in, and start messaging with other users in real-time. The admin panel allows administrators to manage users and content efficiently.
+
+Live Deployed Link :- https://chat-buddy-with-socket-io.vercel.app/
 
 ## Technologies Used
 
