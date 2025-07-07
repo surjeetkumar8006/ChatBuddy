@@ -138,10 +138,9 @@ const Login = () => {
           {isLogin ? (
             <>
               <Typography variant="h5">
-              <p className="flex items-center justify-center uppercase font-bold text-3xl ">
-
-Login
-</p>
+                <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+                  Login
+                </p>
               </Typography>
               <form
                 style={{
@@ -158,8 +157,7 @@ Login
                   variant="outlined"
                   value={username.value}
                   onChange={username.changeHandler}
-          className="flex items-center justify-center uppercase font-bold text-3xl "
-
+                  className="flex items-center justify-center uppercase font-bold text-3xl "
                 />
 
                 <TextField
@@ -171,8 +169,7 @@ Login
                   variant="outlined"
                   value={password.value}
                   onChange={password.changeHandler}
-          className="flex items-center justify-center uppercase font-bold text-3xl "
-
+                  className="flex items-center justify-center uppercase font-bold text-3xl "
                 />
 
                 <Button
@@ -185,7 +182,6 @@ Login
                   fullWidth
                   disabled={isLoading}
                 >
-                  
                   Login
                 </Button>
 
@@ -206,10 +202,10 @@ Login
           ) : (
             <>
               <Typography variant="h5">
-              <p className="flex items-center justify-center uppercase font-bold text-3xl ">
-              Sign Up
-</p>
-                </Typography>
+                <p className="flex items-center justify-center uppercase font-bold text-3xl ">
+                  Sign Up
+                </p>
+              </Typography>
               <form
                 style={{
                   width: "100%",
